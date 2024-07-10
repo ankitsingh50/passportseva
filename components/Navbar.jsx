@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import {AlignLeft, X } from 'lucide-react'
@@ -14,7 +13,7 @@ function NavBar() {
             <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
               {/* LOGO */}
               <Link href="/">
-                <h2 className="text-2xl text-[#006fee] font-bold ">Urgent Passport Seva</h2>
+                <h2 className="text-xl lg:text-2xl text-[#006fee] font-bold ">Urgent Passport Seva</h2>
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="lg:hidden">
@@ -44,7 +43,7 @@ function NavBar() {
                   </Link>
                 </li>
                 <li className="flex justify-center  p-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0   md:hover:text-[#006fee] md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#about-us" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link>
                 </li>
@@ -53,6 +52,7 @@ function NavBar() {
                     Our Services
                   </Link>
                 </li>
+                
                 <li className="flex justify-center  p-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0     md:hover:text-[#006fee] md:hover:bg-transparent">
                   <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                     Contact
@@ -63,7 +63,7 @@ function NavBar() {
           </div>
           <div>
             <div className='hidden lg:flex justify-center items-center'>
-              <button className='px-6 py-2 text-lg bg-[#006fee] rounded-xl'>Apply Now</button>
+              <button className='px-6 py-2 text-lg bg-[#006fee] text-white rounded-xl'>Apply Now</button>
             </div>
           </div>
         </div>
